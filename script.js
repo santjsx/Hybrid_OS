@@ -1,3 +1,4 @@
+// --- View Switching ---
 function showDocs() {
   document.getElementById("view-home").classList.add("fade-out");
   setTimeout(() => {
@@ -25,6 +26,7 @@ function closeDocMobile() {
   document.getElementById("view-docs").classList.remove("reading-mode");
 }
 
+// --- Docs Content ---
 const docsData = [
   {
     title: "Welcome to Hybrid OS",
@@ -240,6 +242,7 @@ function loadDoc(index) {
   }
 }
 
+// --- Theme & Interactions ---
 const themeBtn = document.getElementById("themeToggle");
 const html = document.documentElement;
 
@@ -274,6 +277,7 @@ window.toggleModal = function (isOpen) {
   }
 };
 
+// --- NEW: Button Controls Logic ---
 const btnColorInput = document.getElementById("btnColorInput");
 const btnRadiusInput = document.getElementById("btnRadiusInput");
 
@@ -305,6 +309,7 @@ if (btnRadiusInput) {
   });
 }
 
+// --- NEW: Gradient Text Maker Logic ---
 const gradTextInput = document.getElementById("gradTextInput");
 const gradColor1 = document.getElementById("gradColor1");
 const gradColor2 = document.getElementById("gradColor2");
@@ -318,9 +323,11 @@ function updateGradient() {
   const c2 = gradColor2.value;
   const angle = gradAngle.value;
 
+  // Update Visual
   gradResult.innerText = text;
   gradResult.style.backgroundImage = `linear-gradient(${angle}deg, ${c1}, ${c2})`;
 
+  // Update Code Snippet
   gradCodeOutput.innerText = `.gradient-text {
 font-weight: 800;
 background: linear-gradient(${angle}deg, ${c1}, ${c2});
@@ -329,6 +336,7 @@ background: linear-gradient(${angle}deg, ${c1}, ${c2});
 }`;
 }
 
+// Add listeners if elements exist
 if (gradTextInput) {
   [gradTextInput, gradColor1, gradColor2, gradAngle].forEach((el) => {
     el.addEventListener("input", updateGradient);

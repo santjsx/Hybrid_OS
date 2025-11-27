@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <body>
+    <!-- 1. HEADER -->
     <header class="os-header">
       <div class="brand">
         <svg
@@ -59,7 +59,7 @@
       </button>
     </header>
 
-    <!-- Home View -->
+    <!-- 2. HOME VIEW -->
     <div id="view-home">
       <main>
         <section class="hero">
@@ -83,6 +83,7 @@
         </section>
 
         <div class="container" id="components">
+          <!-- BUTTONS -->
           <section class="component-section">
             <div class="section-header">
               <div class="section-title">
@@ -112,6 +113,7 @@
                 class="preview-area"
                 style="flex-direction: column; gap: 40px"
               >
+                <!-- CONTROLS ADDED HERE -->
                 <div class="controls-wrapper">
                   <div class="control-item">
                     <label class="control-label">Accent</label>
@@ -134,6 +136,7 @@
                     />
                   </div>
                 </div>
+                <!-- BUTTONS WRAPPER -->
                 <div
                   class="preview-area-content"
                   style="
@@ -151,6 +154,7 @@
               </div>
             </div>
             <div id="btn-code" class="doc-content">
+              <!-- PRIMARY CODE -->
               <div class="code-title">Primary Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -181,6 +185,7 @@
                 </div>
               </div>
 
+              <!-- SECONDARY CODE -->
               <div class="code-title">Secondary Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -210,6 +215,7 @@
                 </div>
               </div>
 
+              <!-- OUTLINE CODE -->
               <div class="code-title">Outline Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -240,6 +246,7 @@
                 </div>
               </div>
 
+              <!-- GHOST CODE -->
               <div class="code-title">Ghost Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -359,6 +366,7 @@
             </div>
           </section>
 
+          <!-- GRADIENT TEXT MAKER -->
           <section class="component-section">
             <div class="section-header">
               <div class="section-title">
@@ -386,6 +394,7 @@
                 class="preview-area"
                 style="flex-direction: column; gap: 40px"
               >
+                <!-- CONTROLS -->
                 <div class="controls-wrapper" style="flex-wrap: wrap">
                   <div
                     class="control-item"
@@ -420,6 +429,7 @@
                   </div>
                 </div>
 
+                <!-- RESULT -->
                 <div class="gradient-text-result" id="gradResult">
                   Design Across Boundaries
                 </div>
@@ -495,6 +505,7 @@
             </div>
           </section>
 
+          <!-- LIQUID GOOEY LOADER -->
           <section class="component-section">
             <div class="section-header">
               <div class="section-title">
@@ -519,6 +530,7 @@
 
             <div id="goo-preview" class="doc-content active">
               <div class="preview-area" style="min-height: 300px">
+                <!-- GOOEY LOADER HTML -->
                 <div class="gooey-loader-container">
                   <div class="blob blob-1"></div>
                   <div class="blob blob-2"></div>
@@ -527,6 +539,7 @@
                   <div class="blob blob-5"></div>
                 </div>
 
+                <!-- HIDDEN SVG FILTER -->
                 <svg style="position: absolute; width: 0; height: 0">
                   <defs>
                     <filter id="goo">
@@ -561,7 +574,8 @@
                   &lt;div class="gooey-loader-container"&gt; &lt;div class="blob
                   blob-1"&gt;&lt;/div&gt; &lt;div class="blob
                   blob-2"&gt;&lt;/div&gt; &lt;div class="blob
-                  blob-3"&gt;&lt;/div&gt; &lt;/div&gt;
+                  blob-3"&gt;&lt;/div&gt; &lt;/div&gt; &lt;!-- SVG Filter
+                  Required (See Docs) --&gt;
                 </div>
               </div>
               <div class="code-title">CSS</div>
@@ -610,7 +624,7 @@
             </div>
           </section>
 
-          <!-- Skeletons -->
+          <!-- SKELETONS: More on the way -->
           <div class="coming-soon-section">
             <h3 class="coming-soon-title">More on the way...</h3>
             <div class="skeleton-grid">
@@ -650,7 +664,7 @@
       </footer>
     </div>
 
-    <!-- Docs View -->
+    <!-- 3. DOCS APP VIEW -->
     <div id="view-docs">
       <aside class="docs-sidebar">
         <div class="sidebar-header">
