@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- 1. HEADER -->
+  <body>
     <header class="os-header">
       <div class="brand">
         <svg
@@ -59,7 +59,7 @@
       </button>
     </header>
 
-    <!-- 2. HOME VIEW -->
+    <!-- Home View -->
     <div id="view-home">
       <main>
         <section class="hero">
@@ -83,7 +83,6 @@
         </section>
 
         <div class="container" id="components">
-          <!-- BUTTONS -->
           <section class="component-section">
             <div class="section-header">
               <div class="section-title">
@@ -113,7 +112,6 @@
                 class="preview-area"
                 style="flex-direction: column; gap: 40px"
               >
-                <!-- CONTROLS ADDED HERE -->
                 <div class="controls-wrapper">
                   <div class="control-item">
                     <label class="control-label">Accent</label>
@@ -136,7 +134,6 @@
                     />
                   </div>
                 </div>
-                <!-- BUTTONS WRAPPER -->
                 <div
                   class="preview-area-content"
                   style="
@@ -154,7 +151,6 @@
               </div>
             </div>
             <div id="btn-code" class="doc-content">
-              <!-- PRIMARY CODE -->
               <div class="code-title">Primary Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -185,7 +181,6 @@
                 </div>
               </div>
 
-              <!-- SECONDARY CODE -->
               <div class="code-title">Secondary Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -215,7 +210,6 @@
                 </div>
               </div>
 
-              <!-- OUTLINE CODE -->
               <div class="code-title">Outline Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -246,7 +240,6 @@
                 </div>
               </div>
 
-              <!-- GHOST CODE -->
               <div class="code-title">Ghost Button</div>
               <div class="terminal-window">
                 <div class="terminal-header">
@@ -366,7 +359,6 @@
             </div>
           </section>
 
-          <!-- GRADIENT TEXT MAKER -->
           <section class="component-section">
             <div class="section-header">
               <div class="section-title">
@@ -394,7 +386,6 @@
                 class="preview-area"
                 style="flex-direction: column; gap: 40px"
               >
-                <!-- CONTROLS -->
                 <div class="controls-wrapper" style="flex-wrap: wrap">
                   <div
                     class="control-item"
@@ -429,7 +420,6 @@
                   </div>
                 </div>
 
-                <!-- RESULT -->
                 <div class="gradient-text-result" id="gradResult">
                   Design Across Boundaries
                 </div>
@@ -505,7 +495,122 @@
             </div>
           </section>
 
-          <!-- SKELETONS: More on the way -->
+          <section class="component-section">
+            <div class="section-header">
+              <div class="section-title">
+                <h2>Liquid Loader</h2>
+                <p>Organic, morphing animation using SVG filters.</p>
+              </div>
+            </div>
+            <div class="doc-tabs">
+              <button
+                class="doc-tab active"
+                onclick="switchTab(event, 'goo-preview')"
+              >
+                Preview
+              </button>
+              <button class="doc-tab" onclick="switchTab(event, 'goo-code')">
+                Code
+              </button>
+              <button class="doc-tab" onclick="switchTab(event, 'goo-docs')">
+                Docs
+              </button>
+            </div>
+
+            <div id="goo-preview" class="doc-content active">
+              <div class="preview-area" style="min-height: 300px">
+                <div class="gooey-loader-container">
+                  <div class="blob blob-1"></div>
+                  <div class="blob blob-2"></div>
+                  <div class="blob blob-3"></div>
+                  <div class="blob blob-4"></div>
+                  <div class="blob blob-5"></div>
+                </div>
+
+                <svg style="position: absolute; width: 0; height: 0">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="10"
+                        result="blur"
+                      />
+                      <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo"
+                      />
+                      <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <div id="goo-code" class="doc-content">
+              <div class="code-title">HTML</div>
+              <div class="terminal-window">
+                <div class="terminal-header">
+                  <div class="terminal-controls">
+                    <div class="control-dot dot-close"></div>
+                  </div>
+                  <div class="terminal-title">index.html</div>
+                </div>
+                <div class="terminal-body">
+                  &lt;div class="gooey-loader-container"&gt; &lt;div class="blob
+                  blob-1"&gt;&lt;/div&gt; &lt;div class="blob
+                  blob-2"&gt;&lt;/div&gt; &lt;div class="blob
+                  blob-3"&gt;&lt;/div&gt; &lt;/div&gt;
+                </div>
+              </div>
+              <div class="code-title">CSS</div>
+              <div class="terminal-window">
+                <div class="terminal-header">
+                  <div class="terminal-controls">
+                    <div class="control-dot dot-close"></div>
+                  </div>
+                  <div class="terminal-title">style.css</div>
+                </div>
+                <div class="terminal-body">
+                  .gooey-loader-container { filter: url('#goo'); position:
+                  relative; width: 200px; height: 200px; } .blob { background:
+                  var(--brand-orange); border-radius: 50%; position: absolute; }
+                </div>
+              </div>
+            </div>
+
+            <div id="goo-docs" class="doc-content">
+              <div class="notepad-note">
+                <div class="notepad-header">
+                  <span>Dev Notes</span><span>#animation</span>
+                </div>
+                <div class="notepad-body">
+                  <h3>The "Goo" Effect</h3>
+                  <p>
+                    This effect is achieved by blurring two or more shapes until
+                    they overlap, and then increasing the contrast of the alpha
+                    channel to sharpen the edges again.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>feGaussianBlur:</strong> Blurs the elements.
+                    </li>
+                    <li>
+                      <strong>feColorMatrix:</strong> Increases alpha contrast
+                      (values="... 18 -7") to create the hard edge.
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>Note:</strong> This requires an inline SVG filter in
+                    your HTML with <code>id="goo"</code>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Skeletons -->
           <div class="coming-soon-section">
             <h3 class="coming-soon-title">More on the way...</h3>
             <div class="skeleton-grid">
@@ -545,7 +650,7 @@
       </footer>
     </div>
 
-    <!-- 3. DOCS APP VIEW -->
+    <!-- Docs View -->
     <div id="view-docs">
       <aside class="docs-sidebar">
         <div class="sidebar-header">
