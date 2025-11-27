@@ -217,6 +217,35 @@ const docsData = [
       </ul>
     `,
   },
+  {
+    title: "Components: Liquid Loader",
+    body: `
+      <h1>Liquid Loader</h1>
+      <p>An organic, morphing loader that mimics the physics of liquid droplets merging.</p>
+
+      <h2>How it Works</h2>
+      <p>This effect relies on a clever SVG filter trick known as the "Gooey Effect".</p>
+      <ul>
+        <li><strong>Blur:</strong> First, we blur the moving elements so their alpha channels overlap.</li>
+        <li><strong>Contrast:</strong> Then, we use an SVG ColorMatrix filter to boost the alpha contrast, creating a sharp edge where the blur was.</li>
+      </ul>
+
+      <h2>Usage</h2>
+      <p>You must include the hidden SVG filter in your page for this to work.</p>
+      <div class="terminal-window">
+        <div class="terminal-body">&lt;div class="gooey-loader-container"&gt;
+  &lt;div class="blob blob-1"&gt;&lt;/div&gt;
+  &lt;div class="blob blob-2"&gt;&lt;/div&gt;
+  &lt;!-- ... more blobs ... --&gt;
+&lt;/div&gt;
+
+&lt;!-- Required SVG Filter --&gt;
+&lt;svg style="width:0;height:0;position:absolute;"&gt;
+  &lt;filter id="goo"&gt;...&lt;/filter&gt;
+&lt;/svg&gt;</div>
+      </div>
+    `,
+  },
 ];
 
 function loadDoc(index) {
