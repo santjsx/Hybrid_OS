@@ -1,16 +1,20 @@
 # Hybrid OS UI System
 
-![Version](https://img.shields.io/badge/version-1.0_Public_Beta-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Dependencies](https://img.shields.io/badge/dependencies-none-lightgrey.svg)
+![Version](https://img.shields.io/badge/version-1.0_Public_Beta-blue?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![Dependencies](https://img.shields.io/badge/dependencies-none-lightgrey?style=flat-square)
 
 **A design system that bridges the gap between Ubuntu's warmth, iOS's fluidity, and Material Design's adaptability.**
 
 Hybrid OS is a practical, lightweight design framework built to deliver bold visuals, responsive behavior, and consistent UI patterns across every screen. It requires **no build steps, no frameworks, and no dependencies**.
 
----
+## Technologies
 
-## 🎨 Philosophy
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E)
+
+## Philosophy
 
 Hybrid OS was born from a simple question: *"What if we took the best parts of the world's most popular operating systems and combined them into a lightweight, dependency-free web framework?"*
 
@@ -20,15 +24,17 @@ The result is a system that feels **familiar yet distinct**.
 *   **iOS's Fluidity:** Smooth transitions, glassmorphism, and rounded aesthetics.
 *   **Material's Adaptability:** Responsive grid, depth effects, and tactile interactions.
 
-## ✨ Key Features
+## Key Features
 
-*   **⚡ Zero Dependencies:** No React, Vue, or Webpack. Just pure HTML, CSS, and JS.
-*   **🌗 Native Dark Mode:** Built-in theming engine that respects user preference automatically.
-*   **🎛️ Interactive Playground:** Live customization tools for buttons and typography directly in the UI.
-*   **📱 Mobile-First:** Fully responsive layout that scales from phones to desktops.
-*   **📚 Built-in Documentation:** Integrated docs viewer for instant reference.
+| Feature | Description |
+| :--- | :--- |
+| **Zero Dependencies** | No React, Vue, or Webpack. Just pure HTML, CSS, and JS. |
+| **Native Dark Mode** | Built-in theming engine that respects user preference automatically. |
+| **Interactive Playground** | Live customization tools for buttons and typography directly in the UI. |
+| **Mobile-First** | Fully responsive layout that scales from phones to desktops. |
+| **Built-in Documentation** | Integrated docs viewer for instant reference. |
 
-## 📸 Screenshots
+## Screenshots
 
 <div align="center">
   <img src="images/Screenshot1.png" alt="Home Screen" width="800" style="border-radius: 10px; margin-bottom: 20px;">
@@ -42,8 +48,7 @@ The result is a system that feels **familiar yet distinct**.
   <img src="images/Screenshot4.png" alt="Mobile View" width="400" style="border-radius: 10px;">
 </div>
 
-
-## 🚀 Quick Start
+## Quick Start
 
 Getting started is as simple as downloading a file.
 
@@ -63,13 +68,15 @@ Include the core files in your project:
 <script src="script.js" defer></script>
 ```
 
-## 📂 Project Structure
+## Project Structure
 
-*   `style.css` - The core styling engine and CSS variables.
-*   `script.js` - Handles interactivity, theme toggling, and the documentation viewer.
-*   `index.html` - The main entry point and component showcase.
+| File | Purpose |
+| :--- | :--- |
+| `style.css` | The core styling engine and CSS variables. |
+| `script.js` | Handles interactivity, theme toggling, and the documentation viewer. |
+| `index.html` | The main entry point and component showcase. |
 
-## 🛠️ Customization
+## Customization
 
 Hybrid OS uses **CSS Custom Properties (Variables)** for a centralized theming engine. You can easily customize the look and feel by overriding these variables in your CSS.
 
@@ -91,16 +98,19 @@ Hybrid OS uses **CSS Custom Properties (Variables)** for a centralized theming e
 }
 ```
 
-## 🧩 Components
+## Components
 
 The system includes a growing library of components:
 
-*   **Buttons:** Primary, Secondary, Outline, and Ghost variants.
-*   **Gradient Text:** Webkit-masked typography generator.
-*   **Cards:** Glass panels, Notepads, and Skeleton loaders.
-*   **Forms:** Inputs, Sliders, and Color Pickers.
+| Category | Variants |
+| :--- | :--- |
+| **Buttons** | Primary, Secondary, Outline, Ghost |
+| **Typography** | Gradient Text (Webkit-masked) |
+| **Cards** | Glass Panels, Notepads, Skeleton Loaders |
+| **Forms** | Inputs, Sliders, Color Pickers |
+| **Loaders** | Liquid Gooey Loader (SVG Filter) |
 
-## 👨‍💻 Credits
+## Credits
 
 Crafted with **♥** by **Santhosh Reddy**.
 
