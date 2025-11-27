@@ -28,6 +28,21 @@ The result is a system that feels **familiar yet distinct**.
 *   **📱 Mobile-First:** Fully responsive layout that scales from phones to desktops.
 *   **📚 Built-in Documentation:** Integrated docs viewer for instant reference.
 
+## 📸 Screenshots
+
+<div align="center">
+  <img src="images/Screenshot1.png" alt="Home Screen" width="800" style="border-radius: 10px; margin-bottom: 20px;">
+</div>
+
+<div align="center" style="display: flex; gap: 10px; justify-content: center;">
+  <img src="images/Screenshot2.png" alt="Components" width="45%">
+  <img src="images/Screenshot3.png" alt="Documentation" width="45%">
+</div>
+<div align="center" style="margin-top: 10px;">
+  <img src="images/Screenshot4.png" alt="Mobile View" width="400" style="border-radius: 10px;">
+</div>
+
+
 ## 🚀 Quick Start
 
 Getting started is as simple as downloading a file.
