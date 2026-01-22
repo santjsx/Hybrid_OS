@@ -855,7 +855,7 @@ input[type="color"]::-webkit-color-swatch {
   transform: translateY(-1px);
 }
 
-/* MEDIA PLAYER WIDGET */
+/* MEDIA PLAYER WIDGET (Premium & Minimalist) */
 .media-widget {
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(40px) saturate(180%);
