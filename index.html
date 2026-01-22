@@ -642,6 +642,145 @@
             </div>
           </section>
 
+          <!-- MEDIA PLAYER WIDGET -->
+          <section class="component-section">
+            <div class="section-header">
+              <div class="section-title">
+                <h2>Media Player</h2>
+                <p>Premium glassmorphism widget with interactive states.</p>
+              </div>
+            </div>
+            <div class="doc-tabs">
+              <button
+                class="doc-tab active"
+                onclick="switchTab(event, 'media-preview')"
+              >
+                Preview
+              </button>
+              <button class="doc-tab" onclick="switchTab(event, 'media-code')">
+                Code
+              </button>
+              <button class="doc-tab" onclick="switchTab(event, 'media-docs')">
+                Docs
+              </button>
+            </div>
+
+            <div id="media-preview" class="doc-content active">
+              <div class="preview-area" style="min-height: 400px">
+                <div class="media-widget">
+                  <div class="media-art">
+                    <div class="media-art-inner"></div>
+                  </div>
+                  <div class="media-info">
+                    <h3 class="track-title">Midnight City</h3>
+                    <p class="track-artist">M83</p>
+                  </div>
+                  <div class="media-progress-container">
+                    <div class="media-time current">0:00</div>
+                    <div class="media-progress-bar">
+                      <div class="media-progress-fill"></div>
+                    </div>
+                    <div class="media-time total">4:03</div>
+                  </div>
+                  <div class="media-controls">
+                    <button class="media-btn secondary" aria-label="Previous">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M19 20L9 12l10-8v16zM5 19h2V5H5v14z" />
+                      </svg>
+                    </button>
+                    <button
+                      class="media-btn primary"
+                      id="playPauseBtn"
+                      aria-label="Play"
+                    >
+                      <svg
+                        class="icon-play"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                      <svg
+                        class="icon-pause hidden"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                      </svg>
+                    </button>
+                    <button class="media-btn secondary" aria-label="Next">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M5 4l10 8-10 8V4zm14 1h-2v14h2V5z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="media-code" class="doc-content">
+              <!-- Code view placeholder -->
+              <div class="code-title">HTML</div>
+              <div class="terminal-window">
+                <div class="terminal-header">
+                  <div class="terminal-controls">
+                    <div class="control-dot dot-close"></div>
+                  </div>
+                  <div class="terminal-title">index.html</div>
+                </div>
+                <div class="terminal-body">
+&lt;div class="media-widget"&gt;
+  &lt;div class="media-art"&gt;&lt;/div&gt;
+  &lt;div class="media-info"&gt;
+    &lt;h3&gt;Midnight City&lt;/h3&gt;
+    &lt;p&gt;M83&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;!-- Progress & Controls... --&gt;
+&lt;/div&gt;</div>
+              </div>
+            </div>
+
+            <div id="media-docs" class="doc-content">
+              <div class="notepad-note">
+                <div class="notepad-header">
+                  <span>Dev Notes</span><span>#widget</span>
+                </div>
+                <div class="notepad-body">
+                  <h3>Premium Glassmorphism</h3>
+                  <p>
+                    This widget uses multiple layers of
+                    <span class="note-tag">backdrop-filter</span> and advanced
+                    box-shadows to create a deep, frosted glass effect.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Depth:</strong> Created using a combination of inner
+                      glows and drop shadows.
+                    </li>
+                    <li>
+                      <strong>Gradients:</strong> The album art is pure CSS
+                      conic-gradient.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <!-- SKELETONS: More on the way -->
           <div class="coming-soon-section">
             <h3 class="coming-soon-title">More on the way...</h3>
@@ -756,7 +895,14 @@
           <div class="doc-item" onclick="loadDoc(7)">
             <span class="doc-item-title">Components: Liquid Loader</span>
             <div class="doc-item-meta">
+            <div class="doc-item-meta">
               <span class="doc-preview">SVG Filter Animation</span>
+            </div>
+          </div>
+          <div class="doc-item" onclick="loadDoc(8)">
+            <span class="doc-item-title">Components: Media Widget</span>
+            <div class="doc-item-meta">
+              <span class="doc-preview">Premium Glass Player</span>
             </div>
           </div>
         </div>

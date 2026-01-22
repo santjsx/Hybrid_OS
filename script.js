@@ -246,6 +246,27 @@ const docsData = [
       </div>
     `,
   },
+  {
+    title: "Components: Media Widget",
+    body: `
+      <h1>Media Widget</h1>
+      <p>A premium, glassmorphism-styled media player component that demonstrates complex CSS animations and state management.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Glassmorphism:</strong> Heavy use of <code>backdrop-filter</code> for a frosted glass look.</li>
+        <li><strong>Minimalist Art:</strong> CSS-only gradient album art with glass sheen.</li>
+        <li><strong>Interactive:</strong> Play/Pause toggle state and hover effects.</li>
+      </ul>
+
+      <h2>Usage</h2>
+      <div class="terminal-window">
+        <div class="terminal-body">&lt;div class="media-widget"&gt;
+  &lt;!-- Art, Info, Controls --&gt;
+&lt;/div&gt;</div>
+      </div>
+    `,
+  },
 ];
 
 function loadDoc(index) {
@@ -369,5 +390,28 @@ background: linear-gradient(${angle}deg, ${c1}, ${c2});
 if (gradTextInput) {
   [gradTextInput, gradColor1, gradColor2, gradAngle].forEach((el) => {
     el.addEventListener("input", updateGradient);
+  });
+
+}
+
+// --- NEW: Media Player Logic ---
+const playPauseBtn = document.getElementById("playPauseBtn");
+
+if (playPauseBtn) {
+  playPauseBtn.addEventListener("click", () => {
+    const iconPlay = playPauseBtn.querySelector(".icon-play");
+    const iconPause = playPauseBtn.querySelector(".icon-pause");
+    const artInner = document.querySelector(".media-art-inner");
+
+    // Toggle hidden classes
+    if (iconPlay.classList.contains("hidden")) {
+      // Logic for PAUSE (Switching to Play state)
+      iconPlay.classList.remove("hidden");
+      iconPause.classList.add("hidden");
+    } else {
+      // Logic for PLAY (Switching to Pause state)
+      iconPlay.classList.add("hidden");
+      iconPause.classList.remove("hidden");
+    }
   });
 }

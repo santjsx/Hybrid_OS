@@ -109,6 +109,7 @@ The system includes a growing library of components:
 | **Cards** | Glass Panels, Notepads, Skeleton Loaders |
 | **Forms** | Inputs, Sliders, Color Pickers |
 | **Loaders** | Liquid Gooey Loader (SVG Filter) |
+| **Widgets** | Premium Media Player (Glassmorphism) |
 
 ## Credits
 
